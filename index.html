@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+      .panel {
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        border: none;
+      }
+
+      .panel img {
+        width: 100%;
+      }
+
+      .panel::before {
+        content: 'SALE';
+        color: #fff;
+        background-color: #ff7f00;
+        border-radius: 0 8px 0 8px;
+        padding: 8px 12px;
+        position: absolute;
+        top: -5px;
+        left: 10px;
+        z-index: 100;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .panel-title {
+        font-size: 18px;
+        margin-bottom: 4px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container" style="margin-top: 30px;">
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="panel">
+            <img
+              src="https://picsum.photos/200"
+              class="panel-img-top"
+              alt="..."
+            />
+            <div class="panel-body">
+              <h5 class="panel-title">panel title</h5>
+              <p class="panel-text">
+                Some quick example text to build on the panel title and make up
+                the bulk of the panel's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="panel">
+            <img
+              src="https://picsum.photos/200"
+              class="panel-img-top"
+              alt="..."
+            />
+            <div class="panel-body">
+              <h5 class="panel-title">panel title</h5>
+              <p class="panel-text">
+                Some quick example text to build on the panel title and make up
+                the bulk of the panel's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="panel">
+            <img
+              src="https://picsum.photos/200"
+              class="panel-img-top"
+              alt="..."
+            />
+            <div class="panel-body">
+              <h3 class="panel-title">panel title</h3>
+              <p class="panel-text"></p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="panel">
+            <img
+              src="https://picsum.photos/200"
+              class="panel-img-top"
+              alt="..."
+            />
+            <div class="panel-body">
+              <h5 class="panel-title">Honey</h5>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

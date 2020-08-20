@@ -1,0 +1,10 @@
+.logo-img {
+    width: 285px;
+}
+
+.search-toggle {
+    border: none;
+    background-color: transparent;
+    color: #ff9900;
+    font-size: 24px;
+}
