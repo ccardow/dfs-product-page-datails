@@ -7,11 +7,6 @@ a {
     color: #FF7F00;
 }
 
-a:active,
-a:hover {
-    color: #4884C2;
-}
-
 .starter-template {
     padding: 40px 15px;
     text-align: center;
@@ -52,7 +47,7 @@ a:hover {
 
 .product-category {
     color: #4884C2;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .item-detail {
@@ -70,29 +65,6 @@ a:hover {
     letter-spacing: .5px;
 }
 
-.button-sale {
-    background: #FF7F00;
-    border-radius: 50px;
-    border: none;
-    padding: 15px 8px;
-    color: #FFF;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    flex: 1;
-}
-
-.button-sale:focus, .button-sale:hover{
-    color: #fff;
-    background-color: #4884C2;
-}
-
-.button-group {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .btn-sm-add-to-cart {
     border: solid 1px #eee;
 }
@@ -100,7 +72,6 @@ a:hover {
 .btn-sm-add-to-cart:hover {
     border: solid 1px #FF7F00;
 }
-
 
 .btn-sm-add-to-cart a {
     color: #777;
@@ -111,24 +82,15 @@ a:hover {
 }
 
 .other-products {
-    margin-top: 1rem;
-
+    margin-top: 30px;
 }
 
 .u-margin-top-30 {
     margin-top: 30px;
 }
 
-.u-margin-top-50 {
-    margin-top: 50px;
-}
-
 .u-padding-15 {
     padding: 15px;
-}
-
-.u-border-top {
-    border-top: 1px solid #4884C2;
 }
 
 .panel {
@@ -157,63 +119,6 @@ a:hover {
 .panel-title {
     font-size: 18px;
     margin-bottom: 4px;
-}
-
-.fa-star {
-    color: #ddd;
-}
-
-.fa-heart {
-    color: #ccc;
-    font-size: 40px;
-    margin: 0 24px;
-    flex: 1;
-}
-
-.fa-heart:focus, .fa-heart:hover {
-    color: #FF7900;
-}
-
-
-.checked {
-    color: #FF7F00;
-}
-
-.star-rating {
-    font-size: 1.2em;
-    margin: 0 8px;
-    font-weight: bold;
-}
-
-.price {
-    font-size: 50px;
-    color: #FF7900;
-    font-weight: 700;
-    margin: 8px 0 4px 0;
-
-}
-
-.free-shipping-qualifies > i {
-    font-size: 18px;
-    color: #4884C2;
-}
-
-.form-group {
-    margin-bottom: 0;
-}
-
-#exampleSelect1 {
-    display: flex;
-    align-self: center;
-    margin-bottom: 0;
-    height: 40px;
-    border-radius: 24px;
-    border: solid 2px #FF7900;
-    font-size: 1.5em;
-    padding: 0 56px;
-    width: unset;
-    flex: 1;
-    color: #FF7900;
 }
 
 
