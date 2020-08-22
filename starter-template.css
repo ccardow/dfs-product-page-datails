@@ -1,220 +1,248 @@
 body {
-    padding-top: 50px;
-    font-family: 'Montserrat', sans-serif;
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
-    color: #FF7F00;
+  color: #ff7f00;
 }
 
 a:active,
 a:hover {
-    color: #4884C2;
+  color: #4884c2;
 }
 
 .starter-template {
-    padding: 40px 15px;
-    text-align: center;
+  padding: 40px 15px;
+  text-align: center;
 }
 
 .search::after {
-    content: '';
-    background: #FF7F00;
-    height: 20px;
-    margin-top: -10px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 1px;
+  content: '';
+  background: #ff7f00;
+  height: 20px;
+  margin-top: -10px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
 }
 
 .shopping-cart {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .fa-shopping-cart {
-    color: #FF7F00;
+  color: #ff7f00;
 }
 
 .nav > li > a {
-    color: #777;
+  color: #777;
 }
 
 .nav > li > a:hover {
-    color: #FF7F00;
-    border-bottom: solid 1px;
-    background-color: transparent;
+  color: #ff7f00;
+  border-bottom: solid 1px;
+  background-color: transparent;
 }
 
 .navbar-toggle {
-    background: #FF7F00;
+  background: #ff7f00;
 }
 
 .product-category {
-    color: #4884C2;
-    font-size: 1.2em;
+  color: #4884c2;
+  font-size: 1.2em;
 }
 
 .item-detail {
-    margin-top: 30px;
+  margin-top: 30px;
 }
+
+/* Buttons  */
 
 .button-default {
-    background: #FF7F00;
-    border-radius: 3px;
-    border: none;
-    padding: 15px 24px;
-    color: #FFF;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .5px;
+  background: #ff7f00;
+  border-radius: 3px;
+  border: none;
+  padding: 15px 24px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.button-sale {
-    background: #FF7F00;
-    border-radius: 50px;
-    border: none;
-    padding: 15px 8px;
-    color: #FFF;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    flex: 1;
+.button-add-to-cart {
+  background: #ff7f00;
+  border-radius: 50px;
+  border: none;
+  padding: 15px 8px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex: 1;
 }
 
-.button-sale:focus, .button-sale:hover{
-    color: #fff;
-    background-color: #4884C2;
+.button-add-to-cart:focus,
+.button-add-to-cart:hover {
+  color: #fff;
+  background-color: #4c8dcf;
 }
 
 .button-group {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .btn-sm-add-to-cart {
-    border: solid 1px #eee;
+  border: none;
+  background-color: #ff7f00;
+  color: white;
+  width: 100%;
 }
 
 .btn-sm-add-to-cart:hover {
-    border: solid 1px #FF7F00;
+  border: none;
+  background-color: #ff7f00;
+  color: white;
 }
 
-
 .btn-sm-add-to-cart a {
-    color: #777;
+  color: #777;
+}
+
+.product-image {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.product-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-top: 0;
 }
 
 .product-description {
-    margin-bottom: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
 }
 
 .other-products {
-    margin-top: 1rem;
-
+  margin-top: 1rem;
 }
 
 .u-margin-top-30 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .u-margin-top-50 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .u-padding-15 {
-    padding: 15px;
+  padding: 15px;
 }
 
 .u-border-top {
-    border-top: 1px solid #4884C2;
+  border-top: 1px solid #45b6d9;
 }
 
+/* Cards */
+
 .panel {
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    border: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border: none;
 }
 
 .panel img {
-    width: 100%;
+  width: 100%;
 }
 
 .panel-sale::before {
-    content: 'SALE';
-    font-size: 18px;
-    color: #fff;
-    background-color: #ff7f00;
-    border-radius: 0 8px 0 8px;
-    padding: 8px 12px;
-    position: absolute;
-    top: -5px;
-    left: 10px;
-    z-index: 100;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  content: 'SALE';
+  font-size: 18px;
+  color: #fff;
+  background-color: #4c8dcf;
+  border-radius: 0 8px 0 8px;
+  padding: 8px 12px;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  z-index: 100;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .panel-title {
-    font-size: 18px;
-    margin-bottom: 4px;
+  font-size: 18px;
+  margin-bottom: 4px;
 }
 
+/* Font-Awesome Overrides  */
+
 .fa-star {
-    color: #ddd;
+  color: #ddd;
 }
 
 .fa-heart {
-    color: #ccc;
-    font-size: 40px;
-    margin: 0 24px;
-    flex: 1;
+  color: #ccc;
+  font-size: 48px;
+  margin: 0 24px;
+  flex: 1;
 }
 
-.fa-heart:focus, .fa-heart:hover {
-    color: #FF7900;
+.fa-heart:focus,
+.fa-heart:hover {
+  color: #ff7900;
 }
-
 
 .checked {
-    color: #FF7F00;
+  color: #ff7f00;
 }
 
 .star-rating {
-    font-size: 1.2em;
-    margin: 0 8px;
-    font-weight: bold;
+  font-size: 1.2em;
+  margin: 0 8px;
+  font-weight: bold;
 }
 
 .price {
-    font-size: 50px;
-    color: #FF7900;
-    font-weight: 700;
-    margin: 8px 0 4px 0;
-
+  font-size: 50px;
+  color: #ff7900;
+  font-weight: 700;
+  margin: 8px 0 4px 0;
 }
 
 .free-shipping-qualifies > i {
-    font-size: 18px;
-    color: #4884C2;
+  font-size: 18px;
+  color: #4884c2;
 }
 
 .form-group {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #exampleSelect1 {
-    display: flex;
-    align-self: center;
-    margin-bottom: 0;
-    height: 48px;
-    border-radius: 24px;
-    border: solid 2px #FF7900;
-    font-size: 1.5em;
-    padding: 0 56px;
-    width: unset;
-    flex: 1;
-    color: #FF7900;
+  display: flex;
+  align-self: center;
+  margin-bottom: 0;
+  height: 48px;
+  border-radius: 24px;
+  border: solid 2px #ff7900;
+  font-size: 1.5em;
+  padding: 0 56px;
+  width: unset;
+  flex: 1;
 }
 
-
-
+select {
+  background-image: linear-gradient(45deg, transparent 50%, #ff7900 60%),
+    linear-gradient(135deg, #ff7900 40%, transparent 50%) !important;
+  background-position: calc(100% - 30px) 20px, calc(100% - 20px) 20px, 100% 0;
+  background-size: 10px 10px, 10px 10px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
