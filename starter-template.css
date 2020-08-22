@@ -3,6 +3,13 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+body .video-modal .video-box {
+  position: relative;
+  padding-bottom: 56.2%;
+  height: 0;
+  overflow: hidden;
+}
+
 a {
   color: #ff7f00;
 }
@@ -198,6 +205,11 @@ a:hover {
   color: #ff7900;
 }
 
+.youtube-btn {
+  background-color: transparent;
+  border: none;
+}
+
 .fa-youtube {
   color: #4884c2;
   font-size: 52px;
@@ -252,4 +264,28 @@ select {
   background-repeat: no-repeat;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+/* MODAL  */
+.modal-header {
+  padding: 0 1rem;
+  border-bottom: 0;
+}
+
+.close {
+  font-size: 32px;
+}
+
+iframe {
+  width: 100%;
+  min-height: 63vh;
+}
+
+.modal-body {
+  padding-top: 0;
+}
+
+.modal-dialog {
+  width: unset;
+  max-width: 60%;
 }
