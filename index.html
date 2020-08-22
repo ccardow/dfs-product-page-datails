@@ -351,13 +351,14 @@
             <button
               type="button"
               class="close"
+              id="close-video"
               data-dismiss="modal"
               aria-label="Close"
             >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body" id="yt-player">
             <div class="video-box">
               <iframe
                 title="video-box"
@@ -372,6 +373,12 @@
 
     <!-- END MODAL -->
 
+    <!-- NEEDS WORK TO END VIDEO  -->
+    <script type="text/javascript">
+      $('#close-video').on('hidden.bs.modal', function () {
+        callPlayer('yt-player', 'stopVideo');
+      });
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
