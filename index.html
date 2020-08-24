@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Starter Template for Bootstrap</title>
+    <title>Direct Foods Product Page</title>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link
@@ -24,6 +24,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap"
       rel="stylesheet"
     />
+    
+
   </head>
   <body style="font-family: 'Montserrat', sans-serif;">
     <nav class="navbar navbar-fixed">
@@ -349,6 +351,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <button
+            onClick="closeModal()"
               type="button"
               class="close"
               id="close-modal"
@@ -375,12 +378,7 @@
     <!-- END MODAL -->
 
     <!-- NEEDS WORK TO END VIDEO  -->
-    <script type="text/javascript">
-      $('#close-modal').click(function (e) {
-        e.preventDefault();
-        $('#video-box').children('iframe').attr('src', '');
-      });
-    </script>
+  
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -388,5 +386,13 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script language="javascript" type="text/javascript">
+      $(function(){
+          $('.close').click(function(){      
+              $('iframe').attr('src', $('iframe').attr('src'));
+          });
+      });
+      </script>
   </body>
 </html>
