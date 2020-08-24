@@ -351,19 +351,20 @@
             <button
               type="button"
               class="close"
-              id="close-video"
+              id="close-modal"
               data-dismiss="modal"
               aria-label="Close"
             >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body" id="yt-player">
-            <div class="video-box">
+          <div class="modal-body">
+            <div class="video-box" id="video-box">
               <iframe
                 title="video-box"
-                allowfullscreen=""
+                allowfullscreen="true"
                 src="//www.youtube.com/embed/65UbQXB-xFs"
+                frameborder="0"
               ></iframe>
             </div>
           </div>
@@ -375,8 +376,9 @@
 
     <!-- NEEDS WORK TO END VIDEO  -->
     <script type="text/javascript">
-      $('#close-video').on('hidden.bs.modal', function () {
-        callPlayer('yt-player', 'stopVideo');
+      $('#close-modal').click(function (e) {
+        e.preventDefault();
+        $('#video-box').children('iframe').attr('src', '');
       });
     </script>
     <!-- Bootstrap core JavaScript
