@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Starter Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .modal-header {
+        padding: 0 1rem;
+        border-bottom: 0;
+      }
+
+      .close {
+        font-size: 32px;
+      }
+
+      iframe {
+        width: 100%;
+        min-height: 500px;
+      }
+
+      .modal-body {
+        padding-top: 0;
+      }
+
+      .modal-dialog {
+        width: 60%;
+        
+      }
+      
+      .hide-bullets {
+list-style:none;
+margin-left: -40px;
+margin-top:20px;
+}
+    </style>
+  </head>
+  <body style="font-family: 'Montserrat', sans-serif;">
+    <div class="container">
+      <div id="main_area">
+
+        <!-- Slider -->
+        <div class="row">
+          <div class="col-xs-12" id="slider">
+            <!-- Top part of the slider -->
+            <div class="row">
+              <div class="col-sm-8" id="carousel-bounding-box">
+                <div class="carousel slide" id="myCarousel">
+                  <!-- Carousel items -->
+                  <div class="carousel-inner">
+                    <div class="active item" data-slide-number="0">
+                      <img src="http://placehold.it/770x300&text=one"></div>
+    
+                    <div class="item" data-slide-number="">
+                      <img src="http://placehold.it/770x300&text=two"></div>
+    
+                    <div class="item" data-slide-number="2">
+                      <img src="http://placehold.it/770x300&text=three"></div>
+    
+                    <div class="item" data-slide-number="3">
+                      <img src="http://placehold.it/770x300&text=four"></div>
+    
+                    <div class="item" data-slide-number="4">
+                      <img src="http://placehold.it/770x300&text=five"></div>
+    
+                    <div class="item" data-slide-number="5">
+                      <img src="http://placehold.it/770x300&text=six"></div>
+                  </div>
+                
+                  <!-- Carousel nav -->
+                  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="fa fa-arrow-circle-left"></span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="fa fa-arrow-circle-right"></span>
+                  </a>
+                </div>
+              </div>
+    
+              <div class="col-sm-4" id="carousel-text"></div>
+    
+              <div id="slide-content" style="display: none;">
+                <div id="slide-content-0">
+        
+                  <p>Lorem Ipsum Dolor</p>
+                  <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                </div>
+    
+                <div id="slide-content-1">
+                  <h2>Slider Two</h2>
+                  <p>Lorem Ipsum Dolor</p>
+                  <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                </div>
+    
+                <div id="slide-content-2">
+                  <h2>Slider Three</h2>
+                  <p>Lorem Ipsum Dolor</p>
+                  <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                </div>
+    
+                <div id="slide-content-3">
+                  <h2>Slider Four</h2>
+                  <p>Lorem Ipsum Dolor</p>
+                  <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                </div>
+    
+                <div id="slide-content-4">
+                  <h2>Slider Five</h2>
+                  <p>Lorem Ipsum Dolor</p>
+                  <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                </div>
+    
+                <div id="slide-content-5">
+                  <h2>Slider Six</h2>
+                  <p>Lorem Ipsum Dolor</p>
+                  <p class="sub-text">October 24 2014 - <a href="#">Read more</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/Slider-->
+    
+        <div class="row hidden-xs" id="slider-thumbs">
+          <!-- Bottom switcher of slider -->
+          <ul class="hide-bullets">
+            <li class="col-sm-1">
+              <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/56x56"></a>
+            </li>
+    
+            <li class="col-sm-1">
+              <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/56x56"></a>
+            </li>
+    
+            <li class="col-sm-1">
+              <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/56x56"></a>
+            </li>
+    
+            <li class="col-sm-1">
+              <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/56x56"></a>
+            </li>
+    
+            <li class="col-sm-1">
+              <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/56x56"></a>
+            </li>
+    
+            <li class="col-sm-1">
+              <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/56x56"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- END MODAL -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script>
+        jQuery(document).ready(function($) {
+ 				//set here the speed to change the slides in the carousel
+        $('#myCarousel').carousel({
+                interval: 5000
+        });
+ 				
+//Loads the html to each slider. Write in the "div id="slide-content-x" what you want to show in each slide
+        $('#carousel-text').html($('#slide-content-0').html());
+ 
+        //Handles the carousel thumbnails
+       $('[id^=carousel-selector-]').click( function(){
+            var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+            var id = parseInt(id);
+            $('#myCarousel').carousel(id);
+        });
+ 
+});
+    </script>
+  </body>
+</html>

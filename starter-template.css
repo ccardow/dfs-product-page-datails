@@ -208,12 +208,12 @@ a:hover {
 .youtube-btn {
   background-color: transparent;
   border: none;
+  padding-left: 0;
 }
 
 .fa-youtube {
   color: #4884c2;
   font-size: 52px;
-
   flex: 1;
 }
 
@@ -298,4 +298,13 @@ iframe {
     width: unset;
     max-width: 100%;
   }
+}
+
+.video-description {
+    line-height: 52px;
+    
+}
+
+.play-video {
+    display: inline-flex;
 }
