@@ -79,6 +79,12 @@ a:hover {
   letter-spacing: 0.5px;
 }
 
+.button-default-secondary {
+    background: transparent;
+    border: 1px solid #4884c2;
+    color: #4884C2;
+}
+
 .button-add-to-cart {
   display: flex;
   justify-content: center;
@@ -165,8 +171,17 @@ a:hover {
 /* Cards */
 
 .panel {
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   border: none;
+  
+  
+}
+
+.panel:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.1);
+
+  
 }
 
 .panel img {
@@ -183,8 +198,14 @@ a:hover {
   position: absolute;
   top: -5px;
   left: 10px;
-  z-index: 100;
+  z-index: 1;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  transform-origin: left top;
+}
+
+.panel-sale:hover::before {
+  content: "SALE";
+  left: -5px;
 }
 
 /* .panel-added-to-cart::before {
@@ -234,13 +255,20 @@ a:hover {
     top: -5px;
     left: 10px;
     z-index: 100;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .panel-added-to-cart:hover::before {
+    content: "ADDED TO CART";
+    left: -5px;
   }
 
 .panel-title {
   font-size: 18px;
-  margin-bottom: 4px;
+  margin-bottom: 20px;
+  
 }
+
 
 /* Font-Awesome Overrides  */
 
@@ -392,4 +420,32 @@ iframe {
   font-size: 28px;
   color:#ff7f00;
   margin: 0 16px;
+}
+
+.reviews-list {
+  border-right: 1px solid #333;
+  padding-right: 8px;
+}
+
+.food-sprite-list {
+  padding-left: 8px;
+}
+
+.food-sprite-list > img {
+  margin: 0 4px;
+  width: 25px;;
+}
+
+.options-dropdown {
+  margin-top: 24px;
+}
+
+.options-toggle {
+  border-color: #4884c2;
+}
+
+.options-toggle:active, .options-toggle:hover {
+  background-color: #4884c238 !important;
+  border: 1px solid #4884c2 !important;
+  
 }

@@ -111,7 +111,15 @@
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star"></span>
           <span class="star-rating">4.3</span>
-          <span><a href="#">31 reviews</a></span>
+          <span class="reviews-list"><a href="#">31 reviews</a></span>
+          <span class="food-sprite-list">
+            <img src="/leaf.svg" alt="Natural" data-toggle="tooltip" title="Natural">
+            <img src="/organic.svg" alt="Natural" data-toggle="tooltip" title="Organic">
+            <img src="/no-gmo.svg" alt="Natural" data-toggle="tooltip" title="No GMO">
+            <img src="/vegan.svg" alt="Natural" data-toggle="tooltip" title="Vegan">
+            <img src="/gluten-free.svg" alt="Natural" data-toggle="tooltip" title="Gluten Free">
+          </span>
+          
           <p class="price">
             $49.99
           </p>
@@ -154,6 +162,22 @@
             <span><i class="far fa-heart"></i>
             </span>
           </div>
+          
+          <div class="dropdown options-dropdown">
+            <button class="btn btn-default dropdown-toggle button-default" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Options:
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Frozen bag 150lbs</a></li>
+              <li><a href="#">Freshly picked</a></li>
+              <li><a href="#">Something else here</a></li>
+              
+              
+            </ul>
+          </div>
+          
+          
         </div>
       </div>
       <!-- More from the vendor -->
@@ -186,7 +210,8 @@
               alt="..."
             />
             <div class="panel-body">
-              <h5 class="panel-title">Product Name</h5>
+              <h5 class="panel-title">Product With Really Long Name</h5>
+              
               <a href="#" class="btn btn-sm-add-to-cart">ADD TO CART</a>
             </div>
           </div>
@@ -199,7 +224,7 @@
               alt="..."
             />
             <div class="panel-body">
-              <h5 class="panel-title">Product Name</h5>
+              <h5 class="panel-title">Product With An Even Much Longer Name That is Crazy Long</h5>
               <a href="#" class="btn btn-sm-add-to-cart">ADD TO CART</a>
             </div>
           </div>
@@ -391,5 +416,11 @@
           });
       });
       </script>
+      
+      <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();   
+        });
+        </script>
   </body>
 </html>
