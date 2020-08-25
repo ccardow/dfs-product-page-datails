@@ -80,6 +80,9 @@ a:hover {
 }
 
 .button-add-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #ff7f00;
   border-radius: 50px;
   border: none;
@@ -96,6 +99,8 @@ a:hover {
   color: #fff;
   background-color: #4c8dcf;
 }
+
+
 
 .button-group {
   display: flex;
@@ -182,6 +187,56 @@ a:hover {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* .panel-added-to-cart::before {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    content: "\f218";
+    vertical-align: middle;
+    font-weight: 900;
+    color: #fff;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 50%;
+    background-color: #4884c2;
+    font-size: 16px;
+    top: -5px;
+   right: 10px;
+    z-index: 100;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  } */
+  
+  /* .panel-added-to-cart::before {
+    content: "ADDED TO CART";
+    position: absolute;
+    font-weight: 400;
+    color: #fff;
+    height: 36px;
+    width: calc(100% - 26px);
+    text-align: center;
+    padding-top: 8px;
+    background-color:#4c8dcf;
+    font-size: 14px;
+    top: -5px;
+  left: 12px;
+    z-index: 100;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  } */
+  
+  .panel-added-to-cart::before {
+    content: 'ADDED TO CART';
+    color: #fff;
+    background-color: #4c8dcf;
+    border-radius: 0 8px 0 8px;
+    padding: 8px 12px;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    z-index: 100;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+
 .panel-title {
   font-size: 18px;
   margin-bottom: 4px;
@@ -195,8 +250,7 @@ a:hover {
 
 .fa-heart {
   color: #ccc;
-  font-size: 48px;
-  margin: 0 8px;
+  font-size: 36px;
   flex: 1;
 }
 
@@ -307,4 +361,35 @@ iframe {
 
 .play-video {
     display: inline-flex;
+}
+
+/* ADDED  */
+
+.control-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-radius: 20px;
+}
+
+.inset-control-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  margin: 0 8px;
+}
+
+.quantity {
+  font-size: 20px;
+  color: #4884c2;
+  margin: 0 16px;
+}
+
+.inset-quantity {
+  font-size: 28px;
+  color:#ff7f00;
+  margin: 0 16px;
 }
