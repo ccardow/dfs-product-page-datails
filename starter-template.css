@@ -483,7 +483,7 @@ iframe {
   
   .button-default-secondary {
     padding: 15px 4px;
-    font-size: calc(12px + (14 - 9) * ((100vw - 300px) / (2600 - 300))) !important;
+    font-size: calc(12px + (12 - 9) * ((100vw - 300px) / (2600 - 300))) !important;
     
   }
   
