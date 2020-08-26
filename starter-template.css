@@ -123,7 +123,7 @@ border: 1px solid #4884c2;
 .button-group {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .btn-sm-add-to-cart {
@@ -448,6 +448,15 @@ iframe {
   background-color: #4884c238 !important;
   border: 1px solid #4884c2 !important;
   
+}
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
 }
 
 
