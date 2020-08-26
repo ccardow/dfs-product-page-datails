@@ -384,16 +384,6 @@ iframe {
   max-width: 60%;
 }
 
-@media only screen and (max-width: 600px) {
-  iframe {
-    min-height: 100%;
-  }
-  .modal-dialog {
-    width: unset;
-    max-width: 100%;
-  }
-}
-
 .video-description {
     line-height: 52px;
     
@@ -457,5 +447,49 @@ iframe {
 .options-toggle:active, .options-toggle:hover {
   background-color: #4884c238 !important;
   border: 1px solid #4884c2 !important;
+  
+}
+
+
+/* MEDIA QUERIES  */
+
+
+
+@media only screen and (max-width: 600px) {
+  iframe {
+    min-height: 100%;
+  }
+  .modal-dialog {
+    width: unset;
+    max-width: 100%;
+  }
+  
+  .food-sprite-list {
+    display: flex;
+    margin-top: 8px;
+  }
+  
+  .reviews-list {
+    border-right: none;
+  }
+  
+  .link-to-seller {
+    font-size: calc(14px + (14 - 9) * ((100vw - 300px) / (2600 - 300))) !important;
+  }
+  
+  .inset-control-container {
+    margin: 0 2px;
+  }
+  
+  .button-default-secondary {
+    padding: 15px 4px;
+  }
+  
+  .dropdown-menu {
+    left: unset;
+    right: 0;
+  
+  }
+  
   
 }
