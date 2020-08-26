@@ -109,6 +109,7 @@ border: 1px solid #4884c2;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   flex: 1;
+  max-width: 240px;
 }
 
 .button-add-to-cart:focus,
@@ -289,8 +290,8 @@ border: 1px solid #4884c2;
 
 .fa-heart {
   color: #ccc;
-  font-size: 36px;
-  flex: 1;
+  font-size: 24px;
+  margin-left: 16px;
 }
 
 .fa-heart:focus,
@@ -423,7 +424,7 @@ iframe {
 
 .quantity {
   font-size: 20px;
-  color: #4884c2;
+  color: #ff7f00;
   margin: 0 16px;
 }
 
@@ -447,9 +448,7 @@ iframe {
   width: 25px;;
 }
 
-.options-dropdown {
-  margin-top: 24px;
-}
+
 
 .options-toggle {
   border-color: #4884c2;
